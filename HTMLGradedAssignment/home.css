@@ -1,0 +1,155 @@
+header{
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.685);
+    color:rgb(255, 255, 255);
+    padding: 20px;
+}
+#nav-section{
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    top: 0%;
+   
+}
+.menu{
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+}
+.menu li{
+        display: inline-block;
+        padding: 10px;
+}
+.menu li a{
+       text-decoration: none;
+       font-size: 20px;
+       color: white;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.200);
+}
+.menu li:nth-child(2):hover #dropdown1,
+.menu li:nth-child(3):hover #dropdown2 {
+    display: block;
+}
+#dropdown1,
+#dropdown2 {
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: whitesmoke;
+    padding: 0%;
+}
+#dropdown1 li,
+#dropdown2 li {
+    display: block;
+}
+#dropdown1 li a,
+#dropdown2 li a {
+    color: steelblue;
+    font-size: 15px;
+}
+@keyframes advertisement{
+    0% {
+        background-image: url(Images\Animation\ani1.jpg);
+    }
+    20% {
+        background-image: url(Images/Animation/ani2.png);
+    }
+    40% {
+        background-image: url(Images/Animation/ani3.jpg);
+    }
+    60% {
+        background-image: url(Images/Animation/ani4.jpg);
+    }
+    80% {
+        background-image: url(Images/Animation/ani5.jpg);
+    }
+    100% {
+        background-image: url(Images/Animation/ani1.jpg);
+    }
+}
+#ad{
+    height: 70vh;
+    margin: 5px;
+    border: 2px solid rgb(68, 8, 187);
+    animation-name: advertisement;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+#covidCare,
+#DiabetesCare{
+    margin: 10px;
+    white-space: nowrap;
+}
+.products{
+    position: relative;
+    margin: 15px;
+    width: 15vw;
+    height: 50vh;
+    display: inline-block;
+    padding: 1.5vw;
+    padding-top: 2vh;
+    background-color: rgba(135, 207, 235, 0.2);
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2), 0 8px 28px 0 rgba(0, 0, 0, 0.19);    
+}
+.products img{
+    width: 15vw;
+    height: 25vh;
+    border-radius: 10px;
+    align-self: center;
+}
+.products:hover {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 15vw;
+    height: 50vh;
+}
+.description {
+    font-size: 1em;
+    color: steelblue;
+}
+h4{
+    font-size: 1em;
+    padding: 0px;
+    margin-top: 0vh;
+}
+.button{
+    font-size: 1em;
+    font-weight: bolder;
+    display: inline-block;
+    border: solid 2px steelblue;
+    border-radius: 10px;
+    width: 12vw;
+    text-align: center;
+    text-decoration: none;
+    padding: 1vh 1vw;    
+    margin-top: 3vh;
+    color: goldenrod;
+    background-color: rgba(83, 157, 218, 0.116);
+}
+footer{
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0%;
+}
+footer>p{
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    bottom: 0%;
+    padding: 20px;
+}
+.button:visited {
+    background-color: rgb(250, 234, 230);
+    border: rgb(0, 255, 76);
+}
